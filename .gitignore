@@ -3,3 +3,7 @@ emilia
 config.json
 *__pycache__
 logs
+parlimen-24k-chunk.json
+malaysian-podcast.json
+cartoon.json
+klasik.json

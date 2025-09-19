@@ -72,7 +72,13 @@ def get_audio_files(folder_path):
                 p = os.path.join(root, file)
                 p_done = os.path.join(root + '_processed', f, f'{f}.json')
                 if os.path.exists(p_done):
-                    continue
+                    try:
+                        with open(p_done) as fopen:
+                            json.load(fopen)
+                        continue
+                    except Exception as e:
+                        pass
+                    
                 audio_files.append(p)
     return audio_files
 
