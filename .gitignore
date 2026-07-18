@@ -7,3 +7,5 @@ parlimen-24k-chunk.json
 malaysian-podcast.json
 cartoon.json
 klasik.json
+.env
+claude-ping*.json
